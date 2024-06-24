@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anatomia de tabelas</title>
+        <style>
+            table{
+                width: 300px;
+                border-collapse: collapse;
+            }
+
+            td, th{
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            .texto{
+                text-align: center;
+            }
+
+            .numero{
+                text-align: right;
+            }
+
+            thead{
+                background-color: darkgray;
+                color: white;
+            }
+
+            caption{
+                background-color: lightgray;
+                font-size: 1em;
+                padding: 2px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Uso de tabelas grandes</h1>
+        <table>
+            <caption>População do Brasil</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="texto">São Paulo</td>
+                    <td class="numero">45.919.049</td>
+                </tr>
+                <tr>
+                    <td class="texto">Rio de janeiro</td>
+                    <td class="numero">15.500.021</td>
+                </tr>
+                <tr>
+                    <td class="texto">Minas gerais</td>
+                    <td class="numero">10.950.236</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td class="numero">000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
